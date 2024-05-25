@@ -13,6 +13,7 @@ import {
 } from "@/types/type";
 import { defaultNavElement } from "@/constants";
 import { createSpecificShape } from "./shapes";
+import React from "react";
 
 // initialize fabric canvas
 export const initializeFabric = ({

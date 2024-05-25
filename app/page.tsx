@@ -1,12 +1,8 @@
-"use client";
-import Live from "@/components/Live";
-import { Room } from "./Room";
+import dynamic from "next/dynamic";
 
-export default function Page() {
-  return (
-    <div >
+const App = dynamic(() => import('./App'), {
+  ssr: false
+})
 
-      <Live />
-    </div>
-  );
-}
+
+export default App;
