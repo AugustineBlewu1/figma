@@ -77,8 +77,9 @@ export default function Page() {
     for (const [key, value] of canvasObjects.entries()) {
       canvasObjects.delete(key);
 
-      return canvasObjects.size === 0;
     }
+    return canvasObjects.size === 0;
+
   }, []);
 
   const deleteShapeFromStorage = useMutation(({ storage }, objectId) => {
